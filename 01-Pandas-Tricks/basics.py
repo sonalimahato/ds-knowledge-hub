@@ -1,5 +1,10 @@
 import pandas as pd
 
+# Loading different file formats
+df = pd.read_csv('data.csv')          # CSV
+df = pd.read_excel('data.xlsx')      # Excel
+df = pd.read_json('data.json')        # JSON
+
 # 1. Loading Data 
 df = pd.read_csv('your_data.csv')
 
