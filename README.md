@@ -27,9 +27,3 @@ A curated collection of highly efficient **Python snippets**, **mathematical not
 
 ### 🧠 Featured Snippet: Modern Data Cleaning
 > "Clean data is the foundation of every great model."
-```python
-# A classy way to check for missing percentages
-def missing_data_report(df):
-    report = df.isnull().sum().to_frame('missing_count')
-    report['percent'] = (report['missing_count'] / len(df)) * 100
-    return report.style.background_gradient(cmap='Purples')
